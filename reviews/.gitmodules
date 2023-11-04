@@ -1,0 +1,6 @@
+[submodule "bday-reminder"]
+	path = bday-reminder
+	url = git@github.com:violettomania/bday-reminder.git
+[submodule "tours"]
+	path = tours
+	url = git@github.com:violettomania/tours.git
