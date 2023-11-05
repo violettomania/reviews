@@ -1,6 +1,7 @@
 import React from 'react';
 import Review from './Review';
-import StepButtons from './StepButtons';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+
 import reviews from './data';
 
 export default function App() {
@@ -31,7 +32,12 @@ export default function App() {
       <article className='review'>
         <Review {...reviews[reviewIndex]} />
         <div className='btn-container'>
-          <StepButtons onPrev={handlePrev} onNext={handleNext} />
+          <button className='prev-btn' onClick={handlePrev}>
+            <FaChevronLeft />
+          </button>
+          <button className='next-btn' onClick={handleNext}>
+            <FaChevronRight />
+          </button>
         </div>
         <button className='btn btn-hipster' onClick={handleRandom}>
           surprise me
