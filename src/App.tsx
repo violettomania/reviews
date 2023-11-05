@@ -13,7 +13,12 @@ export default function App() {
         <div className='btn-container'>
           <StepButtons />
         </div>
-        <button className='btn btn-hipster' onClick={() => {}}>
+        <button
+          className='btn btn-hipster'
+          onClick={() =>
+            setReviewIndex(Math.floor(Math.random() * reviews.length))
+          }
+        >
           surprise me
         </button>
       </article>
