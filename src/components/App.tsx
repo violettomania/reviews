@@ -2,7 +2,7 @@ import React from 'react';
 import Review from './Review';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-import reviews from './data';
+import reviews from '../data';
 
 export default function App() {
   const [reviewIndex, setReviewIndex] = React.useState(0);
